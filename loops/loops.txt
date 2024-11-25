@@ -11,3 +11,25 @@ An initializer — this is usually a variable set to a number, which is incremen
 A condition — this defines when the loop should stop looping. This is generally an expression featuring a comparison operator, a test to see if the exit condition has been met.
 A final-expression — this is always evaluated (or run) each time the loop has gone through a full iteration. It usually serves to increment (or in some cases decrement) the counter variable, to bring it closer to the point where the condition is no longer true.
 Some curly braces that contain a block of code — this code will be run each time the loop iterates.
+
+The “while” loop
+while (condition) {
+  // code
+  // so-called "loop body"
+}
+
+The “do…while” loop
+do {
+  // loop body
+} while (condition);
+
+The “for” loop
+for (begin; condition; step) {
+  // ... loop body ...
+}
+
+part		
+begin-	let i = 0	-Executes once upon entering the loop.
+condition-	i < 3	-Checked before every loop iteration. If false, the loop stops.
+body-	alert(i)	-Runs again and again while the condition is truthy.
+step-	i++	-Executes after the body on each iteration.
