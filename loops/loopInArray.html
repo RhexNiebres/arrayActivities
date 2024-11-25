@@ -28,6 +28,74 @@
       /*You can use map() to do something to each item in a 
         array and create a new array containing the changed 
         items:*/
+
+      function lCat(cat) {
+        return cat.startsWith("L");
+      }
+
+      const cats3 = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+
+      const filtered1 = cats3.filter(lCat);
+
+      console.log(filtered1);
+      // output: [ "Leopard", "Lion" ]
+
+      /*You can use filter() to test each item in a collection(array), 
+        and create a new collection(array) containing only items that match:*/
+      const cats4 = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+
+      const filtered2 = cats4.filter((cat) => cat.startsWith("L"));
+      console.log(filtered2);
+      // output:[ "Leopard", "Lion" ]
+      //same output re-writen as a function expression
+
+      const cats5 = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+
+      for (let i = 0; i < cats5.length; i++) {
+        console.log(cats5[i]);
+      }
+      //loops to iterate through a collection, instead of a for...of loop.
+
+      const cats6 = ["Pete", "Biggles", "Jasmine"];
+
+      let myFavoriteCats1 = "My cats are called ";
+
+      for (const cat of cats6) {
+        myFavoriteCats1 += `${cat}, `;
+      }
+
+      console.log(myFavoriteCats1); // "My cats are called Pete, Biggles, Jasmine, "
+      //another way to write it in a loop
+      const cats7 = ["Pete", "Biggles", "Jasmine"];
+
+      let myFavoriteCats2 = "My cats are called ";
+
+      for (let i = 0; i < cats7.length; i++) {
+        if (i === cats7.length - 1) {
+          // We are at the end of the array
+          myFavoriteCats2 += `and ${cats7[i]}.`;
+        } else {
+          myFavoriteCats2 += `${cats7[i]}, `;
+        }
+      }
+
+      console.log(myFavoriteCats2); // "My cats are called Pete, Biggles, and Jasmine."
+
+      let i = 0;
+      while (i < 3) {
+        // shows 0, then 1, then 2
+        alert(i);
+        i++;
+      }
+      //while loop sytax guide
+
+      let i2 = 0;
+      do {
+        alert(i2);
+        i2++;
+      } while (i2 < 3);
+      /*The loop will first execute the body, then check the 
+      condition, and, while it’s truthy, execute it again and again.*/
     </script>
   </body>
 </html>

@@ -1,0 +1,13 @@
+  //forloop sample:
+for (initializer; condition; final-expression) {
+  // code to run
+}
+
+The keyword for, followed by some parentheses.
+
+Inside the parentheses we have three items, separated by semicolons:
+
+An initializer — this is usually a variable set to a number, which is incremented to count the number of times the loop has run. It is also sometimes referred to as a counter variable.
+A condition — this defines when the loop should stop looping. This is generally an expression featuring a comparison operator, a test to see if the exit condition has been met.
+A final-expression — this is always evaluated (or run) each time the loop has gone through a full iteration. It usually serves to increment (or in some cases decrement) the counter variable, to bring it closer to the point where the condition is no longer true.
+Some curly braces that contain a block of code — this code will be run each time the loop iterates.
