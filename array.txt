@@ -31,3 +31,9 @@ Popping items out of an array, or pushing items into an array.
 Shifting Elements
 Shifting is equivalent to popping, but working on the first element instead of the last.
 
+Merging Arrays (Concatenating)
+In programming languages, concatenation means joining strings end-to-end.
+Concatenation "snow" and "ball" gives "snowball".
+Concatenating arrays means joining arrays end-to-end.
+
+

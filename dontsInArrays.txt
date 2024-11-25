@@ -1,1 +1,5 @@
 Adding elements with high indexes can create undefined "holes" in an array:
+
+Warning !(dont use delete)
+Using delete() leaves undefined holes in the array.
+Use pop() or shift() instead.
