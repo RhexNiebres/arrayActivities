@@ -15,3 +15,5 @@ In JavaScript, objects use named indexes.
 
 Values in objects can be arrays, and values in arrays can be objects:
 
+The at() method returns an indexed element from an array.
+The at() method returns the same as [].
