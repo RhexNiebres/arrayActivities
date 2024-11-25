@@ -1,1 +1,7 @@
 always remember arrays are objects.
+
+You can have objects in an Array. 
+You can have functions in an Array. 
+You can have arrays in an Array:
+
+Adding elements with high indexes can create undefined "holes" in an array:

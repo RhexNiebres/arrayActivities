@@ -21,8 +21,8 @@
 
       const myArrays4 = [item1, item2, item3];
       let myArray4 = myArray4[0]; /*output:item1
-      access array element by refering to its 
-      index number*/
+        access array element by refering to its 
+        index number*/
 
       const myArrays5 = [item1, item2];
       myArray5[0] = "item3";
@@ -35,7 +35,46 @@
       const cars = ["Saab", "Volvo", "BMW"];
       document.getElementById("demo").innerHTML = cars;
       /*with js the array can be access by
-      refering to its array name*/
+        refering to its array name*/
+
+      const person = { firstName: "John", lastName: "Doe", age: 46 };
+      document.getElementById("demo").innerHTML = person.firstName; //output:"John"
+      /*js use names to access object properties*/
+
+      myArray6[0] = Date.now;
+      myArray6[1] = myFunction;
+      myArray6[2] = myCars;
+      //variables with different types in the same array
+
+      // built-in array properties
+      myArray1.length; // Returns the number of elements
+      myArray1.sort(); // Sorts the array
+
+      const fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+      let length = fruits1.length; //.lenght example
+
+      const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+      let fruit = fruits2[fruits2.length - 1];
+      //access last elemt in an array
+
+      const fruits13 = ["Banana", "Orange", "Apple", "Mango"];
+
+      let text1 = "<ul>";
+      fruits3.forEach(myFunction);
+      text1 += "</ul>";
+
+      function myFunction(value) {
+        text1 += "<li>" + value + "</li>";
+      }
+      //Array.forEach() function
+
+      const fruits4 = ["Banana", "Orange", "Apple"];
+      fruits4.push("Lemon");
+      // using push()method Adds a new element (Lemon) to fruits
+
+      const fruits5 = ["Banana", "Orange", "Apple"];
+      fruits5[fruits5.length] = "Lemon";
+      // using lenght property Adds "Lemon" to fruits
     </script>
   </body>
 </html>
