@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //The copyWithin() method overwrites the existing values.
+      //The copyWithin() method does not add items to the array.
+      //The copyWithin() method does not change the length of the array.
+
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      fruits.copyWithin(2, 0); //output: Banana,Orange,Banana,Orange,
+      //The copyWithin() method copies array elements to another position in an array
+      const fruits1 = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+      fruits1.copyWithin(2, 0, 2);
+      //Copy to index 2, the elements from index 0 to 2:
+    </script>
+  </body>
+</html>
