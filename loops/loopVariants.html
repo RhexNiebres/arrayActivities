@@ -22,6 +22,24 @@
       } while (i2 < 3);
       /*The loop will first execute the body, then check the 
       condition, and, while it’s truthy, execute it again and again.*/
+
+      for (let i = 0; i < 3; i++) {
+        alert(i); // 0, 1, 2
+      }
+      alert(i); // error, no such variable
+      /*Here, the “counter” variable i is declared right in the 
+      loop. This is called an “inline” variable declaration. 
+      Such variables are visible only inside the loop.*/
+
+      //Instead of defining a variable, we could use an existing one:
+      let i3 = 0;
+
+      for (i3 = 0; i3 < 3; i3++) {
+        // use an existing variable
+        alert(i3); // 0, 1, 2
+      }
+
+      alert(i3); // 3, visible, because declared outside of the loop
     </script>
   </body>
 </html>
